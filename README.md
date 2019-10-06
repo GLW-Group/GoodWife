@@ -1,6 +1,10 @@
 # GoodWife
 Grocery shopping list generator
 
+# 重要规则
+1. 不直接向master分支commit。建立分支然后提交向master的PR
+2. 不force push
+
 # 项目愿景
 打造属于太太们的平台。她们买菜，她们做饭，她们那么辛苦。希望这款软件可以帮助她们更合理的安排自己的购物目标。
 
