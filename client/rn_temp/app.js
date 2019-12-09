@@ -1,5 +1,3 @@
-var _class, _temp;
-
 import { Provider as TCRNProvider } from '@tarojs/components-rn';
 import TaroRouter from '@tarojs/taro-router-rn';
 import pagesIndexIndex from './pages/index/index';
@@ -22,7 +20,7 @@ import appStyleSheet from "./app_styles";
 var _styleSheet = appStyleSheet;
 const store = configStore();
 
-let App = (_temp = _class = class App extends Component {
+let App = class App extends Component {
   constructor(props, context) {
     super(props, context);
     Taro._$app = this;
@@ -53,14 +51,15 @@ let App = (_temp = _class = class App extends Component {
     this.componentDidHide && this.componentDidHide();
   }
 
-}, _class.config = {
+};
+App.config = {
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
     navigationBarTitleText: 'WeChat',
     navigationBarTextStyle: 'black'
   }
-}, _temp);
+};
 const RootStack = TaroRouter.initRouter([['pages/index/index', pagesIndexIndex]], Taro, App.config);
 Taro.initNativeApi(Taro);
 Taro.initPxTransform({

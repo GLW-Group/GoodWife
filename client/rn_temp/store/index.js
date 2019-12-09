@@ -8,7 +8,7 @@ const composeEnhancers = typeof window === 'object' && window.__REDUX_DEVTOOLS_E
 
 const middlewares = [thunkMiddleware];
 
-if (false && true) {
+if (true && true) {
   middlewares.push(require('redux-logger').createLogger());
 }
 
