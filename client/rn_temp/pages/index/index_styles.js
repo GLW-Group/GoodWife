@@ -11,7 +11,13 @@ function scalePx2dp (uiElementPx) {
 
 export default StyleSheet.create({
   "index": {
-    "flexDirection": "column",
-    "width": "100%"
+    "flexGrow": 1,
+    "flexShrink": 1,
+    "flexBasis": 0,
+    "justifyContent": "flex-start",
+    "marginTop": scalePx2dp(10),
+    "marginRight": scalePx2dp(10),
+    "marginBottom": scalePx2dp(10),
+    "marginLeft": scalePx2dp(10)
   }
 })
