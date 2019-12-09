@@ -1,6 +1,24 @@
 # GoodWife
 Grocery shopping list generator
 
+# 启动项目
+1. Install taro-cli
+2. Run yarn install in client folder
+3. Run yarn dev:rn in client folder
+4. Clone taro-rn-shell outside project
+5. Run yarn install in shell folder
+6. Run pod install in shell/ios folder
+7. Modify AppDelegate.m file, change the module name to match your project name which is "client" for us.
+8. click run in Xcode
+9. Tada! Open a beer and keep saying I'm awesome!
+
+Could meet error for config.h file not found
+Solution is here: https://github.com/facebook/react-native/issues/14382#issuecomment-313163119
+
+Reference files
+	1. https://nervjs.github.io/taro/docs/react-native.html
+https://juejin.im/book/5b73a131f265da28065fb1cd/section/5b7413a4e51d45662434b5ca
+
 # 重要规则
 1. 不直接向master分支commit。建立分支然后提交向master的PR
 2. 不force push
